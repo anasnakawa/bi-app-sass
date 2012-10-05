@@ -1,5 +1,5 @@
 ## Bi App SASS
-bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-write` layout, and the other for `right-to-left` layouts 
+bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts 
 
 created by [Anas Nakawa](//twitter.com/anasnakawa), inspired by 
 [Victor Zamfir](//twitter.com/victorzamfir)
@@ -17,23 +17,23 @@ app-ltr.scss    // ltr interface
 _app.scss       // private file where you will write your styles (won't be compiled)
 </pre>
 in the `app-ltr.scss` only include the following
-<pre>
+```css
 @include 'bi-app-ltr';
 @include 'app';
-</pre>
+```
 
 same for `app-rtl.scss`
-<pre>
+```css
 @include 'bi-app-rtl';
 @include 'app';
-</pre>
+```
 
 now you can write your styles in `_app.scss`, using bi-app mixins, as you were styling for only `ltr` layouts, and the `rtl` styles will be compiled automatically!
-<pre>
+```css
 .foo {
   display: block;
   @include float(left);
   @include border-left(1px solid white);
   ...
 }
-</pre>
+```
