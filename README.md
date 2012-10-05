@@ -4,6 +4,9 @@ bi-app lets you write your stylesheets once, and have them compiled into 2 diffe
 created by [Anas Nakawa](//twitter.com/anasnakawa), inspired by 
 [Victor Zamfir](//twitter.com/victorzamfir)
 
+## License
+[MIT License](http://www.opensource.org/licenses/mit-license.php)
+
 ## Why
 usually when writing stylesheets for bi-directional sites/apps, both `ltr` & `rtl` stylesheets mostly will look the same, except for direction related properties (`float, text-align, padding, margin ..etc` ), so when you write a `float: left` in some `ltr` stylesheet, you'll have to write it again as `float: right` for the `rtl` one
 
@@ -18,14 +21,14 @@ _app.scss       // private file where you will write your styles (won't be compi
 </pre>
 in the `app-ltr.scss` only include the following
 ```css
-@include 'bi-app-ltr';
-@include 'app';
+@import 'bi-app-ltr';
+@import 'app';
 ```
 
 same for `app-rtl.scss`
 ```css
-@include 'bi-app-rtl';
-@include 'app';
+@import 'bi-app-rtl';
+@import 'app';
 ```
 
 now you can write your styles in `_app.scss`, using bi-app mixins, as you were styling for only `ltr` layouts, and the `rtl` styles will be compiled automatically!

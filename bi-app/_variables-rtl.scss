@@ -1,0 +1,12 @@
+// ------------------------------------------
+// right to left variables to be used by bi-app mixins
+// author: anas.nakawa@gmail.com
+// license: MIT (http://www.opensource.org/licenses/mit-license.php)
+// ------------------------------------------
+
+// namespacing variables with bi-app to
+// avoid conflicting with other global variables
+$bi-app-left 				: left;
+$bi-app-right 				: right;
+$bi-app-direction 			: rtl;
+$bi-app-invert-direction 	: ltr;
