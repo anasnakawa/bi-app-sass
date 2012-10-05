@@ -15,8 +15,8 @@ when using **bi-app-sass** , all you have to do is to write your stylesheets onc
 ## How to use it
 create three sass files
 ```js
-app-rtl.scss    // rtl interface to be compiled
-app-ltr.scss    // ltr interface
+app-ltr.scss    // ltr interface to be compiled
+app-rtl.scss    // rtl interface
 _app.scss       // private file where you will write your styles (won't be compiled)
 ```
 in the `app-ltr.scss` only include the following
@@ -37,6 +37,28 @@ now you can write your styles in `_app.scss`, using bi-app mixins, as you were s
   display: block;
   @include float(left);
   @include border-left(1px solid white);
+  ...
+}
+```
+
+the result will be ..
+
+in `app-ltr.css`
+```css
+.foo {
+  display: block;
+  float: left;
+  border-left: 1px solid white;
+  ...
+}
+```
+
+in `app-rtl.css`
+```css
+.foo {
+  display: block;
+  float: right;
+  border-right: 1px solid white;
   ...
 }
 ```
