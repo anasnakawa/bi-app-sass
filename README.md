@@ -14,11 +14,11 @@ when using **bi-app-sass** , all you have to do is to write your stylesheets onc
 
 ## How to use it
 create three sass files
-<pre>
+```js
 app-rtl.scss    // rtl interface to be compiled
 app-ltr.scss    // ltr interface
 _app.scss       // private file where you will write your styles (won't be compiled)
-</pre>
+```
 in the `app-ltr.scss` only include the following
 ```css
 @import 'bi-app-ltr';
