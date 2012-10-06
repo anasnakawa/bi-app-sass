@@ -62,3 +62,59 @@ in `app-rtl.css`
   ...
 }
 ```
+
+## Available mixixn for CSS properties
+```js
+// padding
+padding-left(distance)
+padding-right(distance)
+padding(top, right, bottom, left)
+
+// margin
+margin-left(distance)
+margin-right(distance)
+margin(top, right, bottom, left)
+
+// float
+float(direction)			// left || right || none
+
+// text align
+text-align(direction)		// left || right || center
+
+// clear
+clear(direction)			// left || right || both
+
+// left / right
+left(distance)
+right(distance)
+
+// border
+border-left(border-style)
+border-right(border-style)
+
+// border width
+border-left-width(width)
+border-right-width(width)
+border-width(top, right, bottom, left)
+
+// border style
+border-left-style(style)
+border-right-style(style)
+border-style(top, right, bottom, left)
+
+// border color
+border-left-color(color)
+border-right-color(color)
+border-color(top, right, bottom, left)
+
+// border radius
+border-top-left-radius(radius)
+border-top-right-radius(radius)
+border-bottom-left-radius(radius)
+border-bottom-right-radius(radius)
+border-left-radius(radius)
+border-right-radius(radius)
+border-top-radius(radius)
+border-bottom-radius(radius)
+border-radius(topLeft, topRight, bottomRight, bottomLeft)
+```
