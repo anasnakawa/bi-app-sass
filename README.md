@@ -1,7 +1,7 @@
 ## Bi App SASS
 bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts 
 
-created by [Anas Nakawa](//twitter.com/anasnakawa), inspired by 
+created by [Anas Nakawa](//twitter.com/anasnakawa), & 
 [Victor Zamfir](//twitter.com/victorzamfir)
 
 ## License
