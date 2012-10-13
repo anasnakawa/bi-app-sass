@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bi-App-Sass by anasnakawa</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Bi-App-Sass</h1>
+        <p>writing bi-directional stylesheets in sass</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/anasnakawa/bi-app-sass" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/anasnakawa/bi-app-sass/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/anasnakawa/bi-app-sass/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h2>Bi App SASS</h2>
+
+<p>bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for <code>left-to-right</code> layout, and the other for <code>right-to-left</code> layouts </p>
+
+<p>created by <a href="//twitter.com/anasnakawa">Anas Nakawa</a>, &amp; 
+<a href="//twitter.com/victorzamfir">Victor Zamfir</a></p>
+
+<h2>License</h2>
+
+<p><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p>
+
+<h2>Why</h2>
+
+<p>usually when writing stylesheets for bi-directional sites/apps, both <code>ltr</code> &amp; <code>rtl</code> stylesheets mostly will look the same, except for direction related properties (<code>float, text-align, padding, margin ..etc</code> ), so when you write a <code>float: left</code> in some <code>ltr</code> stylesheet, you'll have to write it again as <code>float: right</code> for the <code>rtl</code> one</p>
+
+<p>when using <strong>bi-app-sass</strong> , all you have to do is to write your stylesheets once using a predefined mixins for those direction related properties, and once you compile your stylesheets, you'll have a ready </p>
+
+<h2>How to use it</h2>
+
+<p>create three sass files</p>
+
+<div class="highlight"><pre><span class="nx">app</span><span class="o">-</span><span class="nx">ltr</span><span class="p">.</span><span class="nx">scss</span>    <span class="c1">// ltr interface to be compiled</span>
+<span class="nx">app</span><span class="o">-</span><span class="nx">rtl</span><span class="p">.</span><span class="nx">scss</span>    <span class="c1">// rtl interface</span>
+<span class="nx">_app</span><span class="p">.</span><span class="nx">scss</span>       <span class="c1">// private file where you will write your styles (won't be compiled)</span>
+</pre></div>
+
+<p>in the <code>app-ltr.scss</code> only include the following</p>
+
+<div class="highlight"><pre><span class="k">@import</span> <span class="s1">'bi-app-ltr'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'app'</span><span class="p">;</span>
+</pre></div>
+
+<p>same for <code>app-rtl.scss</code></p>
+
+<div class="highlight"><pre><span class="k">@import</span> <span class="s1">'bi-app-rtl'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'app'</span><span class="p">;</span>
+</pre></div>
+
+<p>now you can write your styles in <code>_app.scss</code>, using bi-app mixins, as you were styling for only <code>ltr</code> layouts, and the <code>rtl</code> styles will be compiled automatically!</p>
+
+<div class="highlight"><pre><span class="nc">.foo</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="o">@</span><span class="n">include</span> <span class="k">float</span><span class="p">(</span><span class="k">left</span><span class="p">);</span>
+  <span class="o">@</span><span class="n">include</span> <span class="k">border-left</span><span class="p">(</span><span class="m">1px</span> <span class="k">solid</span> <span class="nb">white</span><span class="p">);</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>the result will be ..</p>
+
+<p>in <code>app-ltr.css</code></p>
+
+<div class="highlight"><pre><span class="nc">.foo</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>in <code>app-rtl.css</code></p>
+
+<div class="highlight"><pre><span class="nc">.foo</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="nb">white</span><span class="p">;</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>Available mixins for CSS properties</h2>
+
+<div class="highlight"><pre><span class="c1">// padding</span>
+<span class="nx">padding</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+<span class="nx">padding</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+<span class="nx">padding</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+
+<span class="c1">// margin</span>
+<span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+<span class="nx">margin</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+<span class="nx">margin</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+
+<span class="c1">// float</span>
+<span class="kr">float</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>            <span class="c1">// left || right || none</span>
+
+<span class="c1">// text align</span>
+<span class="nx">text</span><span class="o">-</span><span class="nx">align</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>       <span class="c1">// left || right || center</span>
+
+<span class="c1">// clear</span>
+<span class="nx">clear</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>            <span class="c1">// left || right || both</span>
+
+<span class="c1">// left / right</span>
+<span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+<span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+
+<span class="c1">// border</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">)</span>
+
+<span class="c1">// border width</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">width</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">width</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+
+<span class="c1">// border style</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">style</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">style</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+
+<span class="c1">// border color</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+
+<span class="c1">// border radius</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
+<span class="nx">border</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">topLeft</span><span class="p">,</span> <span class="nx">topRight</span><span class="p">,</span> <span class="nx">bottomRight</span><span class="p">,</span> <span class="nx">bottomLeft</span><span class="p">)</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/anasnakawa">anasnakawa</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
