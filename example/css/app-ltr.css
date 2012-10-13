@@ -1,0 +1,2429 @@
+/* line 20, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* line 25, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 28, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 31, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 34, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+a:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+/* line 39, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+a:hover,
+a:active {
+  outline: 0px;
+}
+
+/* line 43, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 49, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 52, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 55, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0px;
+}
+
+/* line 64, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+button,
+input,
+select,
+textarea {
+  margin: 0px;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+/* line 70, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 74, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0px;
+  border: 0px;
+}
+
+/* line 81, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 85, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[type="search"] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+/* line 90, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 93, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 97, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+body {
+  margin: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* line 105, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+/* line 109, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+/* line 113, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+
+/* line 121, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+/* line 124, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.span9 {
+  width: 700px;
+}
+
+/* line 127, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.span4 {
+  width: 300px;
+}
+
+/* line 130, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.span3 {
+  width: 220px;
+}
+
+/* line 133, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid {
+  width: 100%;
+}
+
+/* line 137, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid::before,
+.row-fluid::after {
+  display: table;
+  line-height: 0;
+  content: '';
+}
+
+/* line 142, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid::after {
+  clear: both;
+}
+
+/* line 145, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 2.128%;
+  box-sizing: border-box;
+}
+
+/* line 153, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0px;
+}
+
+/* line 156, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span12 {
+  width: 100%;
+}
+
+/* line 159, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span11 {
+  width: 91.48936170212765%;
+}
+
+/* line 162, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span10 {
+  width: 82.97872340425532%;
+}
+
+/* line 165, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span9 {
+  width: 74.46808510638297%;
+}
+
+/* line 168, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span8 {
+  width: 65.95744680851064%;
+}
+
+/* line 171, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span7 {
+  width: 57.44680851063829%;
+}
+
+/* line 174, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span6 {
+  width: 48.93617021276595%;
+}
+
+/* line 177, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span5 {
+  width: 40.42553191489362%;
+}
+
+/* line 180, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span4 {
+  width: 31.914893617021278%;
+}
+
+/* line 183, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span3 {
+  width: 23.404255319148934%;
+}
+
+/* line 186, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span2 {
+  width: 14.893617021276595%;
+}
+
+/* line 189, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .span1 {
+  width: 6.382978723404255%;
+}
+
+/* line 192, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset12 {
+  margin-left: 104.255%;
+}
+
+/* line 195, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset12:first-child {
+  margin-left: 102.128%;
+}
+
+/* line 198, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset11 {
+  margin-left: 95.745%;
+}
+
+/* line 201, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset11:first-child {
+  margin-left: 93.617%;
+}
+
+/* line 204, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset10 {
+  margin-left: 87.234%;
+}
+
+/* line 207, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset10:first-child {
+  margin-left: 85.106%;
+}
+
+/* line 210, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset9 {
+  margin-left: 78.723%;
+}
+
+/* line 213, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset9:first-child {
+  margin-left: 76.596%;
+}
+
+/* line 216, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset8 {
+  margin-left: 70.213%;
+}
+
+/* line 219, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset8:first-child {
+  margin-left: 68.085%;
+}
+
+/* line 222, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset7 {
+  margin-left: 61.702%;
+}
+
+/* line 225, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset7:first-child {
+  margin-left: 59.574%;
+}
+
+/* line 228, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset6 {
+  margin-left: 53.191%;
+}
+
+/* line 231, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset6:first-child {
+  margin-left: 51.064%;
+}
+
+/* line 234, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset5 {
+  margin-left: 44.681%;
+}
+
+/* line 237, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset5:first-child {
+  margin-left: 42.553%;
+}
+
+/* line 240, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset4 {
+  margin-left: 36.17%;
+}
+
+/* line 243, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset4:first-child {
+  margin-left: 34.043%;
+}
+
+/* line 246, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset3 {
+  margin-left: 27.66%;
+}
+
+/* line 249, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset3:first-child {
+  margin-left: 25.532%;
+}
+
+/* line 252, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset2 {
+  margin-left: 19.149%;
+}
+
+/* line 255, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset2:first-child {
+  margin-left: 17.021%;
+}
+
+/* line 258, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset1 {
+  margin-left: 10.638%;
+}
+
+/* line 261, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .offset1:first-child {
+  margin-left: 8.511%;
+}
+
+/* line 265, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none;
+}
+
+/* line 269, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+
+/* line 272, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 277, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.container-fluid::before,
+.container-fluid::after {
+  display: table;
+  line-height: 0;
+  content: '';
+}
+
+/* line 282, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.container-fluid::after {
+  clear: both;
+}
+
+/* line 285, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+p {
+  margin: 0px 0px 10px;
+}
+
+/* line 288, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 291, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 294, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+em {
+  font-style: italic;
+}
+
+/* line 297, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 305, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0px;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+/* line 318, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 323, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* line 327, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* line 331, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* line 335, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 339, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 343, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 347, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h1 small {
+  font-size: 24px;
+}
+
+/* line 350, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h2 small {
+  font-size: 18px;
+}
+
+/* line 353, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h3 small {
+  font-size: 14px;
+}
+
+/* line 356, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+h4 small {
+  font-size: 14px;
+}
+
+/* line 360, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+ul,
+ol {
+  padding: 0px;
+  margin: 0px 0px 10px 25px;
+}
+
+/* line 367, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0px;
+}
+
+/* line 370, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+li {
+  line-height: 20px;
+}
+
+/* line 373, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+dl {
+  margin-bottom: 20px;
+}
+
+/* line 377, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+dt,
+dd {
+  line-height: 20px;
+}
+
+/* line 380, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 383, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+dd {
+  margin-left: 10px;
+}
+
+/* line 386, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+hr {
+  margin: 20px 0px;
+  border-width: 1px 0px;
+  border-top-style: solid;
+  border-top-color: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+/* line 394, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+abbr[title] {
+  cursor: help;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #999999;
+}
+
+/* line 400, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote {
+  padding: 0px 0px 0px 15px;
+  margin: 0px 0px 20px;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+
+/* line 407, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote p {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+/* line 413, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999999;
+}
+
+/* line 418, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote small::before {
+  content: — ;
+}
+
+/* line 421, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0px;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-left-width: 0px;
+}
+
+/* line 431, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+
+/* line 434, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote.pull-right small::before {
+  content: '';
+}
+
+/* line 437, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+blockquote.pull-right small::after {
+  content:  —;
+}
+
+/* line 443, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+  content: '';
+}
+
+/* line 446, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+/* line 453, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+code,
+pre {
+  padding: 0px 3px 2px;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+  font-size: 12px;
+  color: #333333;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 463, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+code {
+  padding: 2px 4px;
+  color: #dd1144;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+/* line 469, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0px 0px 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.149);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 485, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+pre code {
+  padding: 0px;
+  color: inherit;
+  background-color: transparent;
+  border: 0px;
+}
+
+/* line 491, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+form {
+  margin: 0px 0px 20px;
+}
+
+/* line 494, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+fieldset {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+/* line 499, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+  color: #333333;
+  border-width: 0px 0px 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+}
+
+/* line 511, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+legend small {
+  font-size: 15px;
+  color: #999999;
+}
+
+/* line 519, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+/* line 527, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input,
+button,
+select,
+textarea {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 530, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 534, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+textarea {
+  height: auto;
+}
+
+/* line 538, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0px 0px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* line 549, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+/* line 553, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+select,
+input[type="file"] {
+  height: 30px;
+  line-height: 30px;
+}
+
+/* line 557, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+select {
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+/* line 563, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+/* line 569, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+/* line 574, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+/* line 584, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[class*="span"],
+select[class*="span"],
+textarea[class*="span"],
+.uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: 0px;
+}
+
+/* line 597, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+
+/* line 602, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input.span9,
+textarea.span9,
+.uneditable-input.span9 {
+  width: 686px;
+}
+
+/* line 607, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input.span4,
+textarea.span4,
+.uneditable-input.span4 {
+  width: 286px;
+}
+
+/* line 612, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input.span3,
+textarea.span3,
+.uneditable-input.span3 {
+  width: 206px;
+}
+
+/* line 620, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+/* line 627, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+  background-color: transparent;
+}
+
+/* line 632, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+/* line 638, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+input:focus:required:invalid:focus,
+textarea:focus:required:invalid:focus,
+select:focus:required:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: #f8b9b7 0px 0px 6px;
+  box-shadow: #f8b9b7 0px 0px 6px;
+}
+
+/* line 646, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-append .add-on,
+.input-prepend .add-on,
+.input-append .btn,
+.input-prepend .btn {
+  vertical-align: top;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 654, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-append .active,
+.input-prepend .active {
+  background-color: #a9dba9;
+  border-color: #46a546;
+}
+
+/* line 659, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-prepend .add-on,
+.input-prepend .btn {
+  margin-right: -1px;
+}
+
+/* line 663, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-prepend .add-on:first-child,
+.input-prepend .btn:first-child {
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 670, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-append .add-on,
+.input-append .btn {
+  margin-left: -1px;
+}
+
+/* line 674, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-append .add-on:last-child,
+.input-append .btn:last-child {
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 681, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-prepend.input-append .add-on:first-child,
+.input-prepend.input-append .btn:first-child {
+  margin-right: -1px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 689, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.input-prepend.input-append .add-on:last-child,
+.input-prepend.input-append .btn:last-child {
+  margin-left: -1px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 696, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.form-search .input-append .btn {
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 14px;
+  border-top-right-radius: 14px;
+  -webkit-border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 702, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.form-search .input-prepend .btn {
+  -webkit-border-top-left-radius: 14px;
+  border-top-left-radius: 14px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+/* line 708, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+/* line 715, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+table [class*="span"],
+.row-fluid table [class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0px;
+}
+
+/* line 720, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.table .span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0px;
+}
+
+/* line 725, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.table .span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0px;
+}
+
+/* line 730, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.table .span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0px;
+}
+
+/* line 736, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url(http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png);
+  background-position: 14px 14px;
+  background-repeat: no-repeat no-repeat;
+}
+
+/* line 759, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.icon-white,
+.nav-tabs > .active > a > [class^="icon-"],
+.nav-tabs > .active > a > [class*=" icon-"],
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"] {
+  background-image: url(http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings-white.png);
+}
+
+/* line 762, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.dropdown-menu.pull-right {
+  right: 0px;
+  left: auto;
+}
+
+/* line 767, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  outline: 0px;
+  background-repeat: repeat no-repeat;
+}
+
+/* line 775, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.pull-right > .dropdown-menu {
+  right: 0px;
+  left: auto;
+}
+
+/* line 779, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.dropdown .dropdown-menu .nav-header {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 783, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.047) 0px 1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.047) 0px 1px 1px inset;
+}
+
+/* line 796, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.well blockquote {
+  border-color: rgba(0, 0, 0, 0.149);
+}
+
+/* line 799, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+}
+
+/* line 805, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn {
+  display: inline-block;
+  padding: 4px 14px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.749) 0px 1px 1px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e6e6e6 #e6e6e6 #a2a2a2;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+  background-repeat: repeat no-repeat;
+}
+
+/* line 833, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+}
+
+/* line 837, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  -webkit-transition: background-position 0.1s linear;
+  background-position: 0px -15px;
+}
+
+/* line 844, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+/* line 849, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-image: none;
+  outline: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.149) 0px 2px 4px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.149) 0px 2px 4px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+}
+
+/* line 856, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-large {
+  padding: 9px 14px;
+  font-size: 16px;
+  line-height: normal;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* line 865, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-large [class^="icon-"] {
+  margin-top: 2px;
+}
+
+/* line 873, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 877, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn {
+  border-color: #c5c5c5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+
+/* line 882, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 903, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+
+/* line 910, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
+}
+
+/* line 914, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 935, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+/* line 942, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+/* line 946, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  *background-color: #bd362f;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 967, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+/* line 974, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+/* line 978, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 999, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+/* line 1006, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+
+/* line 1010, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 1031, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+/* line 1038, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+
+/* line 1042, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  *background-color: #222222;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 1063, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+
+/* line 1070, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+
+/* line 1074, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0px;
+  border: 0px;
+}
+
+/* line 1080, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-toolbar .btn + .btn,
+.btn-toolbar .btn-group + .btn,
+.btn-toolbar .btn + .btn-group {
+  margin-left: 5px;
+}
+
+/* line 1083, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn {
+  position: relative;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: -4px;
+}
+
+/* line 1091, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn + .btn {
+  margin-left: -1px;
+}
+
+/* line 1095, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn,
+.btn-group > .dropdown-menu {
+  font-size: 14px;
+}
+
+/* line 1098, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn-large {
+  font-size: 16px;
+}
+
+/* line 1101, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn:first-child {
+  margin-left: 0px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+/* line 1107, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 1114, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active,
+.btn-group > .btn.active {
+  z-index: 2;
+}
+
+/* line 1117, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn + .dropdown-toggle {
+  padding-right: 8px;
+  padding-left: 8px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.122) 1px 0px 0px inset, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+  box-shadow: rgba(255, 255, 255, 0.122) 1px 0px 0px inset, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.047) 0px 1px 2px;
+}
+
+/* line 1123, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+/* line 1127, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn .caret {
+  margin-top: 8px;
+  margin-left: 0px;
+}
+
+/* line 1133, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-mini .caret,
+.btn-small .caret,
+.btn-large .caret {
+  margin-top: 6px;
+}
+
+/* line 1136, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-large .caret {
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+}
+
+/* line 1141, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.dropup .btn-large .caret {
+  border-top-width: 0px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+/* line 1152, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-primary .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-success .caret,
+.btn-inverse .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* line 1156, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 1165, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn + .btn {
+  margin-top: -1px;
+  margin-left: 0px;
+}
+
+/* line 1169, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 1175, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn:last-child {
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 1181, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn-large:first-child {
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 1187, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-group-vertical .btn-large:last-child {
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 1193, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav {
+  margin-bottom: 20px;
+  margin-left: 0px;
+  list-style: none;
+}
+
+/* line 1198, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > li > a {
+  display: block;
+}
+
+/* line 1201, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+/* line 1205, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > .pull-right {
+  float: right;
+}
+
+/* line 1208, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #999999;
+  text-shadow: rgba(255, 255, 255, 0.498) 0px 1px 0px;
+  text-transform: uppercase;
+}
+
+/* line 1218, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav li + .nav-header {
+  margin-top: 9px;
+}
+
+/* line 1221, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+
+/* line 1227, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list > li > a,
+.nav-list .nav-header {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-shadow: rgba(255, 255, 255, 0.498) 0px 1px 0px;
+}
+
+/* line 1232, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list > li > a {
+  padding: 3px 15px;
+}
+
+/* line 1236, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+  background-color: #0088cc;
+}
+
+/* line 1241, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list [class^="icon-"] {
+  margin-right: 2px;
+}
+
+/* line 1244, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-list .divider {
+  height: 1px;
+  margin: 9px 1px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+/* line 1254, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dddddd #dddddd transparent;
+}
+
+/* line 1263, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: #ffffff;
+  background-color: #0088cc;
+}
+
+/* line 1267, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav .dropdown-toggle .caret {
+  margin-top: 6px;
+  border-top-color: #0088cc;
+  border-bottom-color: #0088cc;
+}
+
+/* line 1272, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav .dropdown-toggle:hover .caret {
+  border-top-color: #005580;
+  border-bottom-color: #005580;
+}
+
+/* line 1276, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav .active .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* line 1280, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-tabs .active .dropdown-toggle .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+
+/* line 1284, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > .dropdown.active > a:hover {
+  cursor: pointer;
+}
+
+/* line 1289, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover {
+  color: #ffffff;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+/* line 1296, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav li.dropdown.open .caret,
+.nav li.dropdown.open.active .caret,
+.nav li.dropdown.open a:hover .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+  opacity: 1;
+}
+
+/* line 1302, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+/* line 1306, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover {
+  border-color: transparent #dddddd #dddddd;
+}
+
+/* line 1310, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover {
+  border-color: #dddddd transparent #dddddd #dddddd;
+}
+
+/* line 1314, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover {
+  border-color: #dddddd #dddddd #dddddd transparent;
+}
+
+/* line 1317, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > .disabled > a {
+  color: #999999;
+}
+
+/* line 1320, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav > .disabled > a:hover {
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+/* line 1325, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar {
+  margin-bottom: 20px;
+  overflow: visible;
+  color: #777777;
+}
+
+/* line 1330, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inner {
+  min-height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  border: 1px solid #d4d4d4;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.063) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.063) 0px 1px 4px;
+  background-repeat: repeat no-repeat;
+}
+
+/* line 1346, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inner::before,
+.navbar-inner::after {
+  display: table;
+  line-height: 0;
+  content: '';
+}
+
+/* line 1351, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inner::after {
+  clear: both;
+}
+
+/* line 1354, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .container {
+  width: auto;
+}
+
+/* line 1357, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.nav-collapse.collapse {
+  height: auto;
+}
+
+/* line 1360, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777777;
+  text-shadow: #ffffff 0px 1px 0px;
+}
+
+/* line 1370, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .brand:hover {
+  text-decoration: none;
+}
+
+/* line 1373, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-text {
+  margin-bottom: 0px;
+  line-height: 40px;
+}
+
+/* line 1377, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-link {
+  color: #777777;
+}
+
+/* line 1380, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-link:hover {
+  color: #333333;
+}
+
+/* line 1383, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .divider-vertical {
+  height: 40px;
+  margin: 0px 9px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: white;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #f2f2f2;
+}
+
+/* line 1394, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 5px;
+}
+
+/* line 1399, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .btn-group .btn,
+.navbar .input-prepend .btn,
+.navbar .input-append .btn {
+  margin-top: 0px;
+}
+
+/* line 1404, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-form input,
+.navbar-form select,
+.navbar-form .btn {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+/* line 1408, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-static-top .navbar-inner {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 1415, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+  margin-bottom: 0px;
+}
+
+/* line 1423, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  border-width: 0px 0px 1px;
+}
+
+/* line 1426, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0px 0px;
+}
+
+/* line 1430, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-right: 0px;
+  padding-left: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* line 1440, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+/* line 1443, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-top {
+  top: 0px;
+}
+
+/* line 1447, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.098) 0px -1px 0px inset, rgba(0, 0, 0, 0.098) 0px 1px 10px;
+  box-shadow: rgba(0, 0, 0, 0.098) 0px -1px 0px inset, rgba(0, 0, 0, 0.098) 0px 1px 10px;
+}
+
+/* line 1451, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-bottom .navbar-inner {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 0px inset, rgba(0, 0, 0, 0.098) 0px -1px 10px;
+  box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 0px inset, rgba(0, 0, 0, 0.098) 0px -1px 10px;
+}
+
+/* line 1455, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav {
+  position: relative;
+  left: 0px;
+  display: block;
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+/* line 1462, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav.pull-right {
+  float: right;
+  margin-right: 0px;
+}
+
+/* line 1466, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > li {
+  float: left;
+}
+
+/* line 1469, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: #ffffff 0px 1px 0px;
+}
+
+/* line 1476, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+
+/* line 1480, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 1487, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.122) 0px 3px 8px inset;
+  box-shadow: rgba(0, 0, 0, 0.122) 0px 3px 8px inset;
+}
+
+/* line 1494, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .btn-navbar {
+  display: none;
+  float: right;
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.247) 0px -1px 0px;
+  background-color: #ededed;
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+  border-color: rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.247);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.098) 0px 1px 0px inset, rgba(255, 255, 255, 0.075) 0px 1px 0px;
+  box-shadow: rgba(255, 255, 255, 0.098) 0px 1px 0px inset, rgba(255, 255, 255, 0.075) 0px 1px 0px;
+  background-repeat: repeat no-repeat;
+}
+
+/* line 1513, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
+/* line 1517, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #f5f5f5;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.247) 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.247) 0px 1px 0px;
+}
+
+/* line 1529, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn-navbar .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+/* line 1532, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > li > .dropdown-menu::before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right-width: 7px;
+  border-right-style: solid;
+  border-right-color: transparent;
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  border-left-width: 7px;
+  border-left-style: solid;
+  border-left-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+/* line 1548, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav > li > .dropdown-menu::after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: transparent;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: transparent;
+  content: '';
+}
+
+/* line 1564, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-bottom .nav > li > .dropdown-menu::before {
+  top: auto;
+  bottom: -7px;
+  border-top-width: 7px;
+  border-top-style: solid;
+  border-bottom-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 1572, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-fixed-bottom .nav > li > .dropdown-menu::after {
+  top: auto;
+  bottom: -6px;
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: #ffffff;
+  border-bottom-width: 0px;
+}
+
+/* line 1582, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #555555;
+  background-color: #e5e5e5;
+}
+
+/* line 1586, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #777777;
+  border-bottom-color: #777777;
+}
+
+/* line 1592, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+
+/* line 1597, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .pull-right > li > .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right {
+  right: 0px;
+  left: auto;
+}
+
+/* line 1602, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .pull-right > li > .dropdown-menu::before,
+.navbar .nav > li > .dropdown-menu.pull-right::before {
+  right: 12px;
+  left: auto;
+}
+
+/* line 1607, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .pull-right > li > .dropdown-menu::after,
+.navbar .nav > li > .dropdown-menu.pull-right::after {
+  right: 13px;
+  left: auto;
+}
+
+/* line 1612, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+  right: 100%;
+  left: auto;
+  margin-right: -1px;
+  margin-left: 0px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 1622, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse {
+  color: #999999;
+}
+
+/* line 1625, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-inner {
+  background-color: #1b1b1b;
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  border-color: #252525;
+  background-repeat: repeat no-repeat;
+}
+
+/* line 1632, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: #999999;
+  text-shadow: rgba(0, 0, 0, 0.247) 0px -1px 0px;
+}
+
+/* line 1637, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover {
+  color: #ffffff;
+}
+
+/* line 1641, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* line 1647, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+/* line 1651, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-link {
+  color: #999999;
+}
+
+/* line 1654, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-link:hover {
+  color: #ffffff;
+}
+
+/* line 1657, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+/* line 1663, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+/* line 1667, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+
+/* line 1673, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* line 1677, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-search .search-query {
+  color: #ffffff;
+  background-color: #515151;
+  border-color: #111111;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 2px inset, rgba(255, 255, 255, 0.149) 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.098) 0px 1px 2px inset, rgba(255, 255, 255, 0.149) 0px 1px 0px;
+  -webkit-transition: none;
+}
+
+/* line 1685, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+/* line 1689, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .navbar-search .search-query:focus,
+.navbar-inverse .navbar-search .search-query.focused {
+  padding: 5px 15px;
+  color: #333333;
+  text-shadow: #ffffff 0px 1px 0px;
+  background-color: #ffffff;
+  border: 0px;
+  outline: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.149) 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.149) 0px 0px 3px;
+}
+
+/* line 1699, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .btn-navbar {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.247) 0px -1px 0px;
+  background-color: #0e0e0e;
+  background-image: -webkit-linear-gradient(top, #151515, #040404);
+  border-color: rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.098) rgba(0, 0, 0, 0.247);
+  background-repeat: repeat no-repeat;
+}
+
+/* line 1711, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.navbar-inverse .btn-navbar:hover,
+.navbar-inverse .btn-navbar:active,
+.navbar-inverse .btn-navbar.active,
+.navbar-inverse .btn-navbar.disabled,
+.navbar-inverse .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #040404;
+}
+
+/* line 1715, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.breadcrumb .active {
+  color: #999999;
+}
+
+/* line 1720, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.pagination ul > li > a:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background-color: #f5f5f5;
+}
+
+/* line 1724, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: #999999;
+  cursor: default;
+}
+
+/* line 1728, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.modal-footer .btn + .btn {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+/* line 1732, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+/* line 1735, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.row-fluid .thumbnails {
+  margin-left: 0px;
+}
+
+/* line 1739, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.btn .label,
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+/* line 1743, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+}
+
+/* line 1748, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+
+/* line 1751, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.carousel .active {
+  left: 0px;
+}
+
+/* line 1754, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 1763, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.hero-unit h1 {
+  margin-bottom: 0px;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+/* line 1770, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.hero-unit p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+}
+
+/* line 1776, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 1779, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* line 1783, /Users/mbp/Documents/commons/open-source/rtl-please/bi-app-sass/example/sass/_app.scss */
+.sidebar-nav {
+  padding: 9px 0px;
+}
