@@ -63,8 +63,9 @@ in `app-rtl.css`
 }
 ```
 
-## Available mixins for CSS properties
-```js
+## Reference
+a list of available mixins for CSS properties
+```
 // padding
 padding-left(distance)
 padding-right(distance)
