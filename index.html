@@ -1,45 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Bi-App-Sass by anasnakawa</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <title>Bi-App-Sass by anasnakawa</title>
   </head>
+
   <body>
+    <div id="container">
+      <div class="inner">
 
-      <header>
-        <h1>Bi-App-Sass</h1>
-        <p>writing bi-directional stylesheets in sass</p>
-      </header>
+        <header>
+          <h1>Bi-App-Sass</h1>
+          <h2>writing bi-directional stylesheets in sass</h2>
+        </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/anasnakawa/bi-app-sass/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/anasnakawa/bi-app-sass/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/anasnakawa/bi-app-sass" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <a href="https://github.com/anasnakawa/bi-app-sass" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/anasnakawa/bi-app-sass/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/anasnakawa/bi-app-sass/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+        <hr>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h2>Bi App SASS</h2>
+        <section id="main_content">
+          <h2>Bi App SASS</h2>
 
 <p>bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for <code>left-to-right</code> layout, and the other for <code>right-to-left</code> layouts </p>
 
@@ -109,68 +101,72 @@ inspired by <a href="//twitter.com/victorzamfir">Victor Zamfir</a></p>
 <span class="p">}</span>
 </pre></div>
 
-<h2>Available mixins for CSS properties</h2>
+<h2>Reference</h2>
 
-<div class="highlight"><pre><span class="c1">// padding</span>
-<span class="nx">padding</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
-<span class="nx">padding</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
-<span class="nx">padding</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+<p>a list of available mixins for CSS properties</p>
 
-<span class="c1">// margin</span>
-<span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
-<span class="nx">margin</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
-<span class="nx">margin</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+<pre><code>// padding
+padding-left(distance)
+padding-right(distance)
+padding(top, right, bottom, left)
 
-<span class="c1">// float</span>
-<span class="kr">float</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>            <span class="c1">// left || right || none</span>
+// margin
+margin-left(distance)
+margin-right(distance)
+margin(top, right, bottom, left)
 
-<span class="c1">// text align</span>
-<span class="nx">text</span><span class="o">-</span><span class="nx">align</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>       <span class="c1">// left || right || center</span>
+// float
+float(direction)            // left || right || none
 
-<span class="c1">// clear</span>
-<span class="nx">clear</span><span class="p">(</span><span class="nx">direction</span><span class="p">)</span>            <span class="c1">// left || right || both</span>
+// text align
+text-align(direction)       // left || right || center
 
-<span class="c1">// left / right</span>
-<span class="nx">left</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
-<span class="nx">right</span><span class="p">(</span><span class="nx">distance</span><span class="p">)</span>
+// clear
+clear(direction)            // left || right || both
 
-<span class="c1">// border</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="p">(</span><span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="p">(</span><span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">)</span>
+// left / right
+left(distance)
+right(distance)
 
-<span class="c1">// border width</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">width</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">width</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">width</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+// border
+border-left(border-style)
+border-right(border-style)
 
-<span class="c1">// border style</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">style</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">style</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">style</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+// border width
+border-left-width(width)
+border-right-width(width)
+border-width(top, right, bottom, left)
 
-<span class="c1">// border color</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="nx">top</span><span class="p">,</span> <span class="nx">right</span><span class="p">,</span> <span class="nx">bottom</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+// border style
+border-left-style(style)
+border-right-style(style)
+border-style(top, right, bottom, left)
 
-<span class="c1">// border radius</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">left</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">right</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">top</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">bottom</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">radius</span><span class="p">)</span>
-<span class="nx">border</span><span class="o">-</span><span class="nx">radius</span><span class="p">(</span><span class="nx">topLeft</span><span class="p">,</span> <span class="nx">topRight</span><span class="p">,</span> <span class="nx">bottomRight</span><span class="p">,</span> <span class="nx">bottomLeft</span><span class="p">)</span>
-</pre></div>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/anasnakawa">anasnakawa</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
-      </footer>
+// border color
+border-left-color(color)
+border-right-color(color)
+border-color(top, right, bottom, left)
+
+// border radius
+border-top-left-radius(radius)
+border-top-right-radius(radius)
+border-bottom-left-radius(radius)
+border-bottom-right-radius(radius)
+border-left-radius(radius)
+border-right-radius(radius)
+border-top-radius(radius)
+border-bottom-radius(radius)
+border-radius(topLeft, topRight, bottomRight, bottomLeft)
+</code></pre>
+        </section>
+
+        <footer>
+          Bi-App-Sass is maintained by <a href="https://github.com/anasnakawa">anasnakawa</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
