@@ -10,7 +10,7 @@ inspired by [Victor Zamfir](//twitter.com/victorzamfir)
 ## Why
 usually when writing stylesheets for bi-directional sites/apps, both `ltr` & `rtl` stylesheets mostly will look the same, except for direction related properties (`float, text-align, padding, margin ..etc` ), so when you write a `float: left` in some `ltr` stylesheet, you'll have to write it again as `float: right` for the `rtl` one
 
-when using **bi-app-sass** , all you have to do is to write your stylesheets once using a predefined mixins for those direction related properties, and once you compile your stylesheets, you'll have a ready 
+when using **bi-app-sass** , all you have to do is to write your stylesheets once using a predefined mixins for those direction related properties, and once you compile your stylesheets, you'll have a ready two stylesheets for your bi-directional app
 
 ## How to use it
 create three sass files
