@@ -1,6 +1,7 @@
 ## Bi App SASS
 bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts 
 
+## Credits
 created by [Anas Nakawa](//twitter.com/anasnakawa),  
 inspired by [Victor Zamfir](//twitter.com/victorzamfir)
 
@@ -61,6 +62,15 @@ in `app-rtl.css`
   border-right: 1px solid white;
   ...
 }
+```
+## Installing via Bower
+```
+bower install bi-app-sass
+```
+
+## Installing via Yeoman
+```
+yeoman install bi-app-sass
 ```
 
 ## Reference
