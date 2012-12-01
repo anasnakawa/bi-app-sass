@@ -1,13 +1,6 @@
 ## Bi App SASS
 bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts 
 
-## Credits
-created by [Anas Nakawa](//twitter.com/anasnakawa),  
-inspired by [Victor Zamfir](//twitter.com/victorzamfir)
-
-## License
-[MIT License](http://www.opensource.org/licenses/mit-license.php)
-
 ## Why
 usually when writing stylesheets for bi-directional sites/apps, both `ltr` & `rtl` stylesheets mostly will look the same, except for direction related properties (`float, text-align, padding, margin ..etc` ), so when you write a `float: left` in some `ltr` stylesheet, you'll have to write it again as `float: right` for the `rtl` one
 
@@ -129,3 +122,10 @@ border-top-radius(radius)
 border-bottom-radius(radius)
 border-radius(topLeft, topRight, bottomRight, bottomLeft)
 ```
+
+## Credits
+created by [@AnasNakawa](//twitter.com/anasnakawa),  
+inspired by [@viczam](//twitter.com/victorzamfir)
+
+## License
+Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
