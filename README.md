@@ -124,8 +124,8 @@ border-radius(topLeft, topRight, bottomRight, bottomLeft)
 ```
 
 ## Credits
-created by [@AnasNakawa](//twitter.com/anasnakawa),  
-inspired by [@viczam](//twitter.com/victorzamfir)
+created by @AnasNakawa [twitter](//twitter.com/anasnakawa),  
+inspired by @viczam [twitter](//twitter.com/victorzamfir)
 
 ## License
 Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
