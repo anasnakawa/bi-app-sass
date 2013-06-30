@@ -121,6 +121,29 @@ border-right-radius(radius)
 border-top-radius(radius)
 border-bottom-radius(radius)
 border-radius(topLeft, topRight, bottomRight, bottomLeft)
+
+// ltr / rtl contents
+rtl
+ltr
+```
+
+## Handling Special Cases
+
+whenever you face a special case, the `rtl` & `ltr` mixins will give you hand :)
+
+```
+.some-class {
+    @inlcude rtl {
+      // what you write here, will appear only in rtl stylesheets
+      background-image: url('rtl/some-image.jpg');
+      background-position: -10px 30px;
+    }
+    
+    @include ltr {
+      background-image: url('ltr/some-image.jpg');
+      background-position: 100% 50%;
+    }
+}
 ```
 
 ## Credits
