@@ -22,6 +22,7 @@
 //  - color
 //  - generic
 //  - radius
+// ltr / rtl contents
 // ------------------------------------------
 
 // generic mixin for properties with values
@@ -242,5 +243,19 @@
   } @else {
     -webkit-border-radius: $topLeft;
             border-radius: $topLeft;
+  }
+}
+
+// ltr / rtl contents
+// ------------------------------------------
+@mixin ltr {
+  @if $bi-app-direction == ltr {
+    @content;
+  }
+}
+
+@mixin rtl {
+  @if $bi-app-direction == rtl {
+    @content;
   }
 }
