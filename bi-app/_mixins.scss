@@ -246,6 +246,32 @@
   }
 }
 
+// Returns "en" or "ar", useful for image suffixes.
+// Usage: background-image: url(/img/header-#{lang()}.png);
+@function lang() {
+  @if $bi-app-direction == ltr {
+    @return 'en';
+  } @else {
+    @return 'ar';
+  }
+}
+
+// Support for "direction" declaration (renders ltr/rtl).
+// Useful for form elements as they swap the text-indent property and align the text accordingly.
+@mixin direction {
+  direction: $bi-app-direction;
+}
+
+// Inverts a percentage value. Example: 97% becames 3%.
+// Useful for background-position.
+@function bi-app-invert-percentage($percentage) {
+  @if $bi-app-direction == rtl {
+    @return 100% - $percentage;
+  } @else {
+    @return $percentage;
+  }
+}
+
 // ltr / rtl contents
 // ------------------------------------------
 @mixin ltr {
