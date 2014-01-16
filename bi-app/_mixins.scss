@@ -196,21 +196,33 @@
 // radius
 @mixin border-top-left-radius($radius) {
   -webkit-border-top-#{$bi-app-left}-radius: $radius;
+     -moz-border-top-#{$bi-app-left}-radius: $radius;
+      -ms-border-top-#{$bi-app-left}-radius: $radius;
+       -o-border-top-#{$bi-app-left}-radius: $radius;
           border-top-#{$bi-app-left}-radius: $radius;
 }
 
 @mixin border-top-right-radius($radius) {
   -webkit-border-top-#{$bi-app-right}-radius: $radius;
+     -moz-border-top-#{$bi-app-right}-radius: $radius;
+      -ms-border-top-#{$bi-app-right}-radius: $radius;
+       -o-border-top-#{$bi-app-right}-radius: $radius;
           border-top-#{$bi-app-right}-radius: $radius;
 }
 
 @mixin border-bottom-left-radius($radius) {
   -webkit-border-bottom-#{$bi-app-left}-radius: $radius;
-          border-bottom-#{$bi-app-left}-radius: $radius; 
+     -moz-border-bottom-#{$bi-app-left}-radius: $radius;
+      -ms-border-bottom-#{$bi-app-left}-radius: $radius;
+       -o-border-bottom-#{$bi-app-left}-radius: $radius;
+          border-bottom-#{$bi-app-left}-radius: $radius;
 }
 
 @mixin border-bottom-right-radius($radius) {
   -webkit-border-bottom-#{$bi-app-right}-radius: $radius;
+     -moz-border-bottom-#{$bi-app-right}-radius: $radius;
+      -ms-border-bottom-#{$bi-app-right}-radius: $radius;
+       -o-border-bottom-#{$bi-app-right}-radius: $radius;
           border-bottom-#{$bi-app-right}-radius: $radius;
 }
 
@@ -242,6 +254,9 @@
     @include border-bottom-left-radius($bottomLeft);
   } @else {
     -webkit-border-radius: $topLeft;
+       -moz-border-radius: $topLeft;
+        -ms-border-radius: $topLeft;
+         -o-border-radius: $topLeft;
             border-radius: $topLeft;
   }
 }
