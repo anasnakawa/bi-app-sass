@@ -133,7 +133,7 @@ whenever you face a special case, the `rtl` & `ltr` mixins will give you hand :)
 
 ```
 .some-class {
-    @inlcude rtl {
+    @include rtl {
       // what you write here, will appear only in rtl stylesheets
       background-image: url('rtl/some-image.jpg');
       background-position: -10px 30px;
