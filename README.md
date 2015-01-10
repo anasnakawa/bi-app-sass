@@ -1,5 +1,5 @@
-## Bi App SASS
-bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts 
+## Bi App Sass
+bi-app lets you write your stylesheets once, and have them compiled into 2 different stylesheets one for `left-to-right` layout, and the other for `right-to-left` layouts
 
 ## Why
 usually when writing stylesheets for bi-directional sites/apps, both `ltr` & `rtl` stylesheets mostly will look the same, except for direction related properties (`float, text-align, padding, margin ..etc` ), so when you write a `float: left` in some `ltr` stylesheet, you'll have to write it again as `float: right` for the `rtl` one
@@ -7,7 +7,7 @@ usually when writing stylesheets for bi-directional sites/apps, both `ltr` & `rt
 when using **bi-app-sass** , all you have to do is to write your stylesheets once using a predefined mixins for those direction related properties, and once you compile your stylesheets, you'll have a ready two stylesheets for your bi-directional app
 
 ## How to use it
-create three sass files
+create three Sass files
 ```js
 app-ltr.scss    // ltr interface to be compiled
 app-rtl.scss    // rtl interface
@@ -138,7 +138,7 @@ whenever you face a special case, the `rtl` & `ltr` mixins will give you hand :)
       background-image: url('rtl/some-image.jpg');
       background-position: -10px 30px;
     }
-    
+
     @include ltr {
       background-image: url('ltr/some-image.jpg');
       background-position: 100% 50%;
