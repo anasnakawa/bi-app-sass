@@ -66,19 +66,19 @@
 
 // float
 // ------------------------------------------
-@mixin bi-app-float-left {
-  float: $bi-app-left;
+@mixin bi-app-float-left($important: '') {
+  float: $bi-app-left unquote($important);
 }
 
-@mixin bi-app-float-right {
-  float: $bi-app-right;
+@mixin bi-app-float-right($important: '') {
+  float: $bi-app-right unquote($important);
 }
 
-@mixin float($direction) {
+@mixin float($direction, $important: '') {
   @if $direction == left {
-    @include bi-app-float-left;
+    @include bi-app-float-left($important);
   } @else if $direction == right {
-    @include bi-app-float-right;
+    @include bi-app-float-right($important);
   } @else {
     float: $direction;
   }
