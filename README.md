@@ -56,6 +56,11 @@ in `app-rtl.css`
   ...
 }
 ```
+## Installing via npm
+```
+npm install bi-app-sass
+```
+
 ## Installing via Bower
 ```
 bower install bi-app-sass
