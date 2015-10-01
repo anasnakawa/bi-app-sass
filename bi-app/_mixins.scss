@@ -28,7 +28,7 @@
 // generic mixin for properties with values
 // (top right bottom left)
 // ------------------------------------------
-@mixin bi-app-compact($property, $top, $right, $bottom, $left) {
+@mixin compact($property, $top, $right, $bottom, $left) {
   @if $bi-app-direction == ltr {
     #{$property}: $top $right $bottom $left;
   } @else {
@@ -47,7 +47,7 @@
 }
 
 @mixin padding($top, $right, $bottom, $left) {
-  @include bi-app-compact(padding, $top, $right, $bottom, $left);
+  @include compact(padding, $top, $right, $bottom, $left);
 }
 
 // margin
@@ -61,24 +61,24 @@
 }
 
 @mixin margin($top, $right, $bottom, $left) {
-  @include bi-app-compact(margin, $top, $right, $bottom, $left);
+  @include compact(margin, $top, $right, $bottom, $left);
 }
 
 // float
 // ------------------------------------------
-@mixin bi-app-float-left($important: '') {
+@mixin float-left($important: '') {
   float: $bi-app-left unquote($important);
 }
 
-@mixin bi-app-float-right($important: '') {
+@mixin float-right($important: '') {
   float: $bi-app-right unquote($important);
 }
 
 @mixin float($direction, $important: '') {
   @if $direction == left {
-    @include bi-app-float-left($important);
+    @include float-left($important);
   } @else if $direction == right {
-    @include bi-app-float-right($important);
+    @include float-right($important);
   } @else {
     float: $direction;
   }
@@ -86,19 +86,19 @@
 
 // text align
 // ------------------------------------------
-@mixin bi-app-text-align-left {
+@mixin text-align-left {
   text-align: $bi-app-left;
 }
 
-@mixin bi-app-text-align-right {
+@mixin text-align-right {
   text-align: $bi-app-right;
 }
 
 @mixin text-align($direction) {
   @if $direction == left {
-    @include bi-app-text-align-left;
+    @include text-align-left;
   } @else if $direction == right {
-    @include bi-app-text-align-right;
+    @include text-align-right;
   } @else {
     text-align: $direction;
   }
@@ -106,19 +106,19 @@
 
 // clear
 // ------------------------------------------
-@mixin bi-app-clear-left {
+@mixin clear-left {
   clear: $bi-app-left;
 }
 
-@mixin bi-app-clear-right {
+@mixin clear-right {
   clear: $bi-app-right;
 }
 
 @mixin clear($direction) {
   @if $direction == left {
-    @include bi-app-clear-left;
+    @include clear-left;
   } @else if $direction == right {
-    @include bi-app-clear-right;
+    @include clear-right;
   } @else {
     clear: $direction;
   }
@@ -155,7 +155,7 @@
 }
 
 @mixin border-width($top, $right, $bottom, $left) {
-  @include bi-app-compact(border-width, $top, $right, $bottom, $left);
+  @include compact(border-width, $top, $right, $bottom, $left);
 }
 
 // style
@@ -168,7 +168,7 @@
 }
 
 @mixin border-style($top, $right, $bottom, $left) {
-  @include bi-app-compact(border-style, $top, $right, $bottom, $left);
+  @include compact(border-style, $top, $right, $bottom, $left);
 }
 
 // color
@@ -181,7 +181,7 @@
 }
 
 @mixin border-color($top, $right, $bottom, $left) {
-  @include bi-app-compact(border-color, $top, $right, $bottom, $left);
+  @include compact(border-color, $top, $right, $bottom, $left);
 }
 
 // generic
@@ -271,7 +271,7 @@
 
 // Inverts a percentage value. Example: 97% becames 3%.
 // Useful for background-position.
-@function bi-app-invert-percentage($percentage) {
+@function invert-percentage($percentage) {
   @if $bi-app-direction == rtl {
     @return 100% - $percentage;
   } @else {
