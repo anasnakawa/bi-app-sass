@@ -238,18 +238,18 @@
   @include border-bottom-right-radius($radius);
 }
 
-@mixin border-radius($topLeft, $topRight: null, $bottomRight: null, $bottomLeft: null) {
-  @if $topRight != null {
-    @include border-top-left-radius($topLeft);
-    @include border-top-right-radius($topRight);
-    @include border-bottom-right-radius($bottomRight);
-    @include border-bottom-left-radius($bottomLeft);
+@mixin border-radius($top-left, $top-right: null, $bottom-right: null, $bottom-left: null) {
+  @if $top-right != null {
+    @include border-top-left-radius($top-left);
+    @include border-top-right-radius($top-right);
+    @include border-bottom-right-radius($bottom-right);
+    @include border-bottom-left-radius($bottom-left);
   } @else {
-    -webkit-border-radius: $topLeft;
-       -moz-border-radius: $topLeft;
-        -ms-border-radius: $topLeft;
-         -o-border-radius: $topLeft;
-            border-radius: $topLeft;
+    -webkit-border-radius: $top-left;
+       -moz-border-radius: $top-left;
+        -ms-border-radius: $top-left;
+         -o-border-radius: $top-left;
+            border-radius: $top-left;
   }
 }
 
