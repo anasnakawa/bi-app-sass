@@ -1,0 +1,21 @@
+// ------------------------------------------
+// float
+// ------------------------------------------
+
+@mixin float-left($important: '') {
+  float: $bi-app-left unquote($important);
+}
+
+@mixin float-right($important: '') {
+  float: $bi-app-right unquote($important);
+}
+
+@mixin float($direction, $important: '') {
+  @if $direction == left {
+    @include float-left($important);
+  } @else if $direction == right {
+    @include float-right($important);
+  } @else {
+    float: $direction;
+  }
+}

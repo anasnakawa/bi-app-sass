@@ -1,0 +1,15 @@
+// ------------------------------------------
+// border width
+// ------------------------------------------
+
+@mixin border-left-width($width) {
+  border-#{$bi-app-left}-width: $width;
+}
+
+@mixin border-right-width($width) {
+  border-#{$bi-app-right}-width: $width;
+}
+
+@mixin border-width($top, $right, $bottom, $left) {
+  @include compact(border-width, $top, $right, $bottom, $left);
+}

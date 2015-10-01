@@ -1,0 +1,21 @@
+// ------------------------------------------
+// text align
+// ------------------------------------------
+
+@mixin text-align-left {
+  text-align: $bi-app-left;
+}
+
+@mixin text-align-right {
+  text-align: $bi-app-right;
+}
+
+@mixin text-align($direction) {
+  @if $direction == left {
+    @include text-align-left;
+  } @else if $direction == right {
+    @include text-align-right;
+  } @else {
+    text-align: $direction;
+  }
+}

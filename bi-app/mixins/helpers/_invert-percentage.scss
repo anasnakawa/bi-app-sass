@@ -1,0 +1,14 @@
+// ------------------------------------------
+// invert-percentage
+//
+// Inverts a percentage value. Example: 97% becames 3%.
+// Useful for background-position.
+// ------------------------------------------
+
+@function invert-percentage($percentage) {
+  @if $bi-app-direction == rtl {
+    @return 100% - $percentage;
+  } @else {
+    @return $percentage;
+  }
+}

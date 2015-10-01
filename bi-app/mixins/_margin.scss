@@ -1,0 +1,15 @@
+// ------------------------------------------
+// margin
+// ------------------------------------------
+
+@mixin margin-left($distance) {
+  margin-#{$bi-app-left}: $distance;
+}
+
+@mixin margin-right($distance) {
+  margin-#{$bi-app-right}: $distance;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  @include compact(margin, $top, $right, $bottom, $left);
+}

@@ -1,0 +1,14 @@
+// ------------------------------------------
+// lang
+//
+// Returns "en" or "ar", useful for image suffixes.
+// Usage: background-image: url(/img/header-#{lang()}.png);
+// ------------------------------------------
+
+@function lang() {
+  @if $bi-app-direction == ltr {
+    @return 'en';
+  } @else {
+    @return 'ar';
+  }
+}
