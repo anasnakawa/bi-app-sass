@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin border-left-color($color) {
-  border-#{$bi-app-left}-color: $color;
+  border-#{$bidi-left}-color: $color;
 }
 
 @mixin border-right-color($color) {
-  border-#{$bi-app-right}-color: $color;
+  border-#{$bidi-right}-color: $color;
 }
 
 @mixin border-color($top, $right, $bottom, $left) {

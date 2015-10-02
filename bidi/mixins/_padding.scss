@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin padding-left($distance) {
-  padding-#{$bi-app-left}: $distance;
+  padding-#{$bidi-left}: $distance;
 }
 
 @mixin padding-right($distance) {
-  padding-#{$bi-app-right}: $distance;
+  padding-#{$bidi-right}: $distance;
 }
 
 @mixin padding($top, $right, $bottom, $left) {

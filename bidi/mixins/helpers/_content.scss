@@ -3,13 +3,13 @@
 // ------------------------------------------
 
 @mixin ltr {
-  @if $bi-app-direction == ltr {
+  @if $bidi-direction == ltr {
     @content;
   }
 }
 
 @mixin rtl {
-  @if $bi-app-direction == rtl {
+  @if $bidi-direction == rtl {
     @content;
   }
 }

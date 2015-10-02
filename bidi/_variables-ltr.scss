@@ -1,5 +1,5 @@
 // ------------------------------------------
-// right to left variables to be used by bi-app mixins
+// left to right variables to be used by bidi mixins
 // authors:
 // twitter.com/anasnakawa
 // twitter.com/victorzamfir
@@ -7,10 +7,11 @@
 // http://www.opensource.org/licenses/mit-license.php
 // ------------------------------------------
 
-// namespacing variables with bi-app to
+// namespacing variables with bidi to
 // avoid conflicting with other global variables
-$bi-app-left 				    : right;
-$bi-app-right           		: left;
-$bi-app-direction 				: rtl;
-$bi-app-invert-direction		: ltr;
-$imp                    		: !important;
+
+$bidi-left                  : left;
+$bidi-right                 : right;
+$bidi-direction             : ltr;
+$bidi-invert-direction      : rtl;
+$imp                        : !important;

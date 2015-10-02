@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin clear-left {
-  clear: $bi-app-left;
+  clear: $bidi-left;
 }
 
 @mixin clear-right {
-  clear: $bi-app-right;
+  clear: $bidi-right;
 }
 
 @mixin clear($direction) {

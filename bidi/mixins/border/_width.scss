@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin border-left-width($width) {
-  border-#{$bi-app-left}-width: $width;
+  border-#{$bidi-left}-width: $width;
 }
 
 @mixin border-right-width($width) {
-  border-#{$bi-app-right}-width: $width;
+  border-#{$bidi-right}-width: $width;
 }
 
 @mixin border-width($top, $right, $bottom, $left) {

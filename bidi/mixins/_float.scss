@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin float-left($important: '') {
-  float: $bi-app-left unquote($important);
+  float: $bidi-left unquote($important);
 }
 
 @mixin float-right($important: '') {
-  float: $bi-app-right unquote($important);
+  float: $bidi-right unquote($important);
 }
 
 @mixin float($direction, $important: '') {

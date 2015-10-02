@@ -6,7 +6,7 @@
 // ------------------------------------------
 
 @function invert-percentage($percentage) {
-  @if $bi-app-direction == rtl {
+  @if $bidi-direction == rtl {
     @return 100% - $percentage;
   } @else {
     @return $percentage;

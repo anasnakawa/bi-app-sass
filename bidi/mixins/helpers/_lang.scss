@@ -6,7 +6,7 @@
 // ------------------------------------------
 
 @function lang() {
-  @if $bi-app-direction == ltr {
+  @if $bidi-direction == ltr {
     @return 'en';
   } @else {
     @return 'ar';

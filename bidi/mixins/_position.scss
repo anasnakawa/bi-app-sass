@@ -3,17 +3,17 @@
 // ------------------------------------------
 
 @mixin left($distance) {
-  @if $bi-app-direction == ltr {
+  @if $bidi-direction == ltr {
     left: $distance;
-  } @else if $bi-app-direction == rtl {
+  } @else if $bidi-direction == rtl {
     right: $distance;
   }
 }
 
 @mixin right($distance) {
-  @if $bi-app-direction == ltr {
+  @if $bidi-direction == ltr {
     right: $distance;
-  } @else if $bi-app-direction == rtl {
+  } @else if $bidi-direction == rtl {
     left: $distance;
   }
 }

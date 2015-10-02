@@ -3,11 +3,11 @@
 // ------------------------------------------
 
 @mixin text-align-left {
-  text-align: $bi-app-left;
+  text-align: $bidi-left;
 }
 
 @mixin text-align-right {
-  text-align: $bi-app-right;
+  text-align: $bidi-right;
 }
 
 @mixin text-align($direction) {

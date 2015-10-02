@@ -6,7 +6,7 @@
 // ------------------------------------------
 
 @mixin compact($property, $top, $right, $bottom, $left) {
-  @if $bi-app-direction == ltr {
+  @if $bidi-direction == ltr {
     #{$property}: $top $right $bottom $left;
   } @else {
     #{$property}: $top $left $bottom $right;
