@@ -5,7 +5,7 @@
 @mixin left($distance) {
   @if $bidi-direction == ltr {
     left: $distance;
-  } @else if $bidi-direction == rtl {
+  } @else {
     right: $distance;
   }
 }
@@ -13,7 +13,7 @@
 @mixin right($distance) {
   @if $bidi-direction == ltr {
     right: $distance;
-  } @else if $bidi-direction == rtl {
+  } @else {
     left: $distance;
   }
 }

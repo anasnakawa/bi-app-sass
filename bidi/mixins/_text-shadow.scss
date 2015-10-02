@@ -1,0 +1,19 @@
+// ------------------------------------------
+// text-shadow
+// ------------------------------------------
+
+@mixin text-shadow-left($h-shadow, $v-shadow, $blur, $color) {
+  text-shadow: $h-shadow $v-shadow $blur $color;
+}
+
+@mixin text-shadow-right($h-shadow, $v-shadow, $blur, $color) {
+  text-shadow: (0 - $h-shadow) $v-shadow $blur $color;
+}
+
+@mixin text-shadow($h-shadow, $v-shadow, $blur: 0, $color: '') {
+  @if $bidi-direction == ltr {
+    @include text-shadow-left($h-shadow, $v-shadow, $blur, $color);
+  } @else {
+    @include text-shadow-right($h-shadow, $v-shadow, $blur, $color);
+  }
+}
