@@ -1,0 +1,27 @@
+// ------------------------------------------
+// box-shadow
+// ------------------------------------------
+
+@mixin box-shadow($horizontal, $vertical, $blur: 0, $spread: 0) {
+    @if $bidi-direction == ltr {
+      -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+         -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+              box-shadow: $horizontal $vertical $blur $spread $color;
+    } @else {
+      -webkit-box-shadow: (0 - $horizontal) $vertical $blur $spread $color;
+         -moz-box-shadow: (0 - $horizontal) $vertical $blur $spread $color;
+              box-shadow: (0 - $horizontal) $vertical $blur $spread $color;
+    }
+}
+
+@mixin box-shadow-inset($horizontal, $vertical, $blur: 0, $spread: 0, $color: '') {
+    @if $bidi-direction == ltr {
+      -webkit-box-shadow: inset $horizontal $vertical $blur $spread $color;
+         -moz-box-shadow: inset $horizontal $vertical $blur $spread $color;
+              box-shadow: inset $horizontal $vertical $blur $spread $color;
+    } @else {
+      -webkit-box-shadow: inset (0 - $horizontal) $vertical $blur $spread $color;
+         -moz-box-shadow: inset (0 - $horizontal) $vertical $blur $spread $color;
+              box-shadow: inset (0 - $horizontal) $vertical $blur $spread $color;
+    }
+}
