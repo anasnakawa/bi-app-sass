@@ -1,0 +1,15 @@
+// ------------------------------------------
+// ltr / rtl contents
+// ------------------------------------------
+
+@mixin ltr {
+  @if $bidi-direction == ltr {
+    @content;
+  }
+}
+
+@mixin rtl {
+  @if $bidi-direction == rtl {
+    @content;
+  }
+}

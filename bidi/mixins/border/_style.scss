@@ -1,0 +1,15 @@
+// ------------------------------------------
+// border style
+// ------------------------------------------
+
+@mixin border-left-style($style) {
+  border-#{$bidi-left}-style: $style;
+}
+
+@mixin border-right-style($style) {
+  border-#{$bidi-right}-style: $style;
+}
+
+@mixin border-style($top, $right, $bottom, $left) {
+  @include compact(border-style, $top, $right, $bottom, $left);
+}

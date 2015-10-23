@@ -1,0 +1,19 @@
+// ------------------------------------------
+// positions
+// ------------------------------------------
+
+@mixin left($distance) {
+  @if $bidi-direction == ltr {
+    left: $distance;
+  } @else {
+    right: $distance;
+  }
+}
+
+@mixin right($distance) {
+  @if $bidi-direction == ltr {
+    right: $distance;
+  } @else {
+    left: $distance;
+  }
+}

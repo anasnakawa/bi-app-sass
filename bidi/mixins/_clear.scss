@@ -1,0 +1,21 @@
+// ------------------------------------------
+// clear
+// ------------------------------------------
+
+@mixin clear-left {
+  clear: $bidi-left;
+}
+
+@mixin clear-right {
+  clear: $bidi-right;
+}
+
+@mixin clear($direction) {
+  @if $direction == left {
+    @include clear-left;
+  } @else if $direction == right {
+    @include clear-right;
+  } @else {
+    clear: $direction;
+  }
+}

@@ -1,0 +1,15 @@
+// ------------------------------------------
+// padding
+// ------------------------------------------
+
+@mixin padding-left($distance) {
+  padding-#{$bidi-left}: $distance;
+}
+
+@mixin padding-right($distance) {
+  padding-#{$bidi-right}: $distance;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  @include compact(padding, $top, $right, $bottom, $left);
+}

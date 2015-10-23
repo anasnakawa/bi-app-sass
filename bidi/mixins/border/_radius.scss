@@ -1,0 +1,62 @@
+// ------------------------------------------
+// border radius
+// ------------------------------------------
+
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-#{$bidi-left}-radius: $radius;
+     -moz-border-top-#{$bidi-left}-radius: $radius;
+          border-top-#{$bidi-left}-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+  -webkit-border-top-#{$bidi-right}-radius: $radius;
+     -moz-border-top-#{$bidi-right}-radius: $radius;
+          border-top-#{$bidi-right}-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+  -webkit-border-bottom-#{$bidi-left}-radius: $radius;
+     -moz-border-bottom-#{$bidi-left}-radius: $radius;
+          border-bottom-#{$bidi-left}-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-#{$bidi-right}-radius: $radius;
+     -moz-border-bottom-#{$bidi-right}-radius: $radius;
+          border-bottom-#{$bidi-right}-radius: $radius;
+}
+
+@mixin border-right-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-left-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin border-top-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-top-right-radius($radius);
+}
+
+@mixin border-bottom-radius($radius) {
+  @include border-bottom-left-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-radius($top-left, $top-right: null, $bottom-right: null, $bottom-left: null) {
+  @if $top-right != null {
+    @include border-top-left-radius($top-left);
+    @include border-top-right-radius($top-right);
+    @include border-bottom-right-radius($bottom-right);
+    @include border-bottom-left-radius($bottom-left);
+  } @else {
+    -webkit-border-radius: $top-left;
+       -moz-border-radius: $top-left;
+        -ms-border-radius: $top-left;
+         -o-border-radius: $top-left;
+            border-radius: $top-left;
+  }
+}

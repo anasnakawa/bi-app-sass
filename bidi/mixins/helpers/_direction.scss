@@ -1,0 +1,10 @@
+// ------------------------------------------
+// direction
+//
+// Support for "direction" declaration (renders ltr/rtl).
+// Useful for form elements as they swap the text-indent property and align the text accordingly.
+// ------------------------------------------
+
+@mixin direction {
+  direction: $bidi-direction;
+}

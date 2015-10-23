@@ -1,0 +1,11 @@
+// ------------------------------------------
+// border generic
+// ------------------------------------------
+
+@mixin border-left($border-style) {
+  border-#{$bidi-left}: $border-style;
+}
+
+@mixin border-right($border-style) {
+  border-#{$bidi-right}: $border-style;
+}
